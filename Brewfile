@@ -1,0 +1,8 @@
+brew "imagemagick"
+brew "mongodb"
+brew "postgresql"
+brew "rbenv"
+brew "redis"
+brew "ruby-build"
+brew "vim"
+brew "yarn"
