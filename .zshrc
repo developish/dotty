@@ -10,3 +10,6 @@ export EDITOR=vim
 # Load completion system and set style to highlight selection
 autoload -Uz compinit && compinit
 zstyle ':completion:*' menu select
+
+# Initialize rbenv for manging the ruby environment
+eval "$(rbenv init -)"
