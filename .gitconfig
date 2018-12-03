@@ -2,5 +2,7 @@
 	excludesfile = ~/.cvsignore
 [alias]
 	st = status --short
+	ci = commit
+	co = checkout
 [include]
 	path = ~/.gitconfig.local
