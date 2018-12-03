@@ -2,3 +2,5 @@
 	excludesfile = ~/.cvsignore
 [alias]
 	st = status --short
+[include]
+	path = ~/.gitconfig.local
