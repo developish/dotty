@@ -1,2 +1,4 @@
 [core]
 	excludesfile = ~/.cvsignore
+[alias]
+	st = status --short
