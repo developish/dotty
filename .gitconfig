@@ -4,5 +4,6 @@
 	st = status --short
 	ci = commit
 	co = checkout
+	ll = log --oneline
 [include]
 	path = ~/.gitconfig.local
