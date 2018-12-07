@@ -13,9 +13,12 @@ export EDITOR=vim
 # Ctrl-k kill from cursor to end of line, etc.
 bindkey -e
 
-# Load completion system and set style to highlight selection
+# Load completion system
 autoload -Uz compinit && compinit
+# Set completion to highlight selection
 zstyle ':completion:*' menu select
+# Complete lowercase -> uppercase
+zstyle ':completion:*' matcher-list 'm:{a-z}={A-Z}'
 
 # Initialize rbenv for manging the ruby environment
 eval "$(rbenv init -)"
