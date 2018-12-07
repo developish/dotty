@@ -18,3 +18,13 @@ set expandtab
 au FileType gitconfig setl noet sw=4 sts=4 ts=4
 au FileType javascript setl et sw=2 sts=2 ts=2
 au FileType ruby setl et sw=2 sts=2 ts=2
+
+" Color and theming
+if $TERM_PROGRAM =~ "iTerm"
+  set termguicolors
+
+  " making guicolors work within tmux
+  " https://github.com/vim/vim/issues/993
+  let &t_8f = "[38;2;%lu;%lu;%lum"
+  let &t_8b = "[48;2;%lu;%lu;%lum"
+endif
