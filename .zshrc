@@ -19,3 +19,8 @@ zstyle ':completion:*' menu select
 
 # Initialize rbenv for manging the ruby environment
 eval "$(rbenv init -)"
+
+# Use nvm for node vesion management
+# --no-use because otherwise it adds significant delay to shell starup
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh" --no-use
