@@ -6,3 +6,8 @@ filetype plugin indent on
 " :help number_relativenumber for more
 set number
 set relativenumber
+
+set shiftwidth=2
+set softtabstop=2
+set tabstop=2
+set expandtab
