@@ -2,6 +2,9 @@ execute pathogen#infect()
 syntax on
 filetype plugin indent on
 
+" allow unsaved buffers in the background
+set hidden
+
 " line numbers - relative with current line number shown
 " :help number_relativenumber for more
 set number
