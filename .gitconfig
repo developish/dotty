@@ -1,9 +1,12 @@
 [core]
 	excludesfile = ~/.cvsignore
 [alias]
+	di = diff
+	dc = diff --cached
 	st = status --short
 	ci = commit
 	co = checkout
 	ll = log --oneline
+	vz = !open . -a Tower
 [include]
 	path = ~/.gitconfig.local
