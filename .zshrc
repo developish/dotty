@@ -23,7 +23,5 @@ zstyle ':completion:*' matcher-list 'm:{a-z}={A-Z}'
 # Initialize rbenv for manging the ruby environment
 eval "$(rbenv init -)"
 
-# Use nvm for node vesion management
-# --no-use because otherwise it adds significant delay to shell starup
-export NVM_DIR="$HOME/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh" --no-use
+# Initialize nodenv for manging the node environment
+eval "$(nodenv init -)"
