@@ -1,5 +1,11 @@
-# Basic prompt, with hostname and working directory
-export PROMPT="%m %~ "
+setopt prompt_subst
+
+autoload -Uz vcs_info
+zstyle ':vcs_info:*' formats '%F{magenta}%b%f '
+zstyle ':vcs_info:*' enable git
+precmd() { vcs_info }
+
+export PROMPT='%~ ${vcs_info_msg_0_}'
 
 # Colorize filetypes in listings, and probably other things
 export CLICOLOR=1
