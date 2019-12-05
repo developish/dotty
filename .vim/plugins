@@ -1,0 +1,12 @@
+cd bundle
+hub clone ctrlpvim/ctrlp.vim
+hub clone flazz/vim-colorschemes
+hub clone junegunn/fzf.vim
+hub clone mileszs/ack.vim
+hub clone othree/html5.vim
+hub clone pangloss/vim-javascript
+hub clone scrooloose/nerdtree
+hub clone tpope/vim-commentary
+hub clone tpope/vim-rails
+hub clone tpope/vim-sensible
+hub clone tpope/vim-dadbod
