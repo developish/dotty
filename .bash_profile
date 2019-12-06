@@ -1,6 +1,11 @@
 export CLICOLOR=1
 export EDITOR=vim
 
+# Add homebrew bin if present in home directory
+if [ -d $HOME/homebrew/bin ]; then
+  export PATH="$HOME/homebrew/bin:$PATH"
+fi
+
 # initialize rbenv, the ruby manager
 eval "$(rbenv init -)"
 
