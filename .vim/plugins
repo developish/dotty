@@ -10,3 +10,4 @@ hub clone tpope/vim-commentary
 hub clone tpope/vim-rails
 hub clone tpope/vim-sensible
 hub clone tpope/vim-dadbod
+hub clone tpope/vim-fugitive
