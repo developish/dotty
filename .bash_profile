@@ -20,6 +20,11 @@ if [ -d $HOME/homebrew/bin ]; then
   fi
 fi
 
+# Add custom bin from home directory if present
+if [ -d $HOME/bin ]; then
+  export PATH="$HOME/bin:$PATH"
+fi
+
 # initialize rbenv, the ruby manager
 eval "$(rbenv init -)"
 
