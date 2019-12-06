@@ -7,6 +7,14 @@ export PS1="\W \u\$ "
 # Add homebrew bin if present in home directory
 if [ -d $HOME/homebrew/bin ]; then
   export PATH="$HOME/homebrew/bin:$PATH"
+
+  # Load completion files if present
+  if [ -d $HOME/homebrew/etc/bash_completion.d ]; then
+    for file in $HOME/homebrew/etc/bash_completion.d/*
+    do
+      source $file
+    done
+  fi
 fi
 
 # initialize rbenv, the ruby manager
