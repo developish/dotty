@@ -4,6 +4,9 @@ export EDITOR=vim
 # Prompt string
 export PS1="\W \u\$ "
 
+# For faster JRuby startup times
+export JRUBY_OPTS="--dev"
+
 # Add homebrew bin if present in home directory
 if [ -d $HOME/homebrew/bin ]; then
   export PATH="$HOME/homebrew/bin:$PATH"
