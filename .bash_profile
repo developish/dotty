@@ -1,6 +1,9 @@
 export CLICOLOR=1
 export EDITOR=vim
 
+# Prompt string
+export PS1="\W \u\$ "
+
 # Add homebrew bin if present in home directory
 if [ -d $HOME/homebrew/bin ]; then
   export PATH="$HOME/homebrew/bin:$PATH"
