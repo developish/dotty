@@ -31,3 +31,7 @@ if $TERM_PROGRAM =~ "iTerm"
   let &t_8f = "[38;2;%lu;%lu;%lum"
   let &t_8b = "[48;2;%lu;%lu;%lum"
 endif
+
+" Autoformat JS files with Prettier on save
+let g:prettier#autoformat = 0
+autocmd BufWritePre *.js,*.jsx,*.css,*.scss,*.json Prettier
